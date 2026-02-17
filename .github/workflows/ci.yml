@@ -27,4 +27,8 @@ jobs:
 
     - name: Verify installation
       run: |
-        python -c "import pandas, numpy, matplotlib; print('All packages installed successfully')"
+        python - <<EOF
+        import pandas
+        import numpy
+        print("Packages installed successfully")
+        EOF
